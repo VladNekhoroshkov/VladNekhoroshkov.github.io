@@ -9,7 +9,7 @@ body, html{
     height: 100%;
     overflow-x: hidden;
     max-width: 100%;
-    overflow-y: hidden ;
+    max-height: 100%;
 }
 
 .bay-button{
