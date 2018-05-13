@@ -1,66 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <link href="https://www.basketshop.ru/images/favicon/favicon.ico" rel="icon">
     <meta charset="UTF-8">
     <title>BasketShop.net</title>
+
+    <link href="https://www.basketshop.ru/images/favicon/favicon.ico" rel="icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-
+    <script src="js/index.js"></script>
 
 </head>
-<body class="blue-grey lighten-4">
+<body>
+
     <div class="row orange card header">
-        <div class = "col s2">
+        <div class="col s2">
             <span class="brand">Basket shop</span>
         </div>
-        <div class = "col navigation s10">
-            <a class="waves-effect waves-light btn brown">
-                <i class="material-icons left ">home</i>
-                Домашняя</a>
-            <a class="waves-effect waves-light btn brown">
-                <i class="material-icons left ">blur_circular</i>
-                Товары</a>
-            <a class="waves-effect waves-light btn brown ">
-                <i class="material-icons left ">whatshot</i>
-                О нас</a>
-            <a class="waves-effect waves-light btn brown">
-                <i class="material-icons left ">contact_mail</i>
-                Контакты</a>
-            <a class="waves-effect waves-light btn brown">
-                <i class="material-icons left ">assignment_ind</i>
-                Социальные сети</a>
-            <a class="waves-effect waves-light btn brown">
-                <i class="material-icons left ">shopping_cart</i>
-                Корзина</a>
-            <a class="waves-effect waves-light btn brown">
-                <i class="material-icons left ">exit_to_app</i>
-                Выход</a>
+        <div class="col s10 right">
+            <a class="waves-effect waves-light btn brown"><i class="material-icons left ">home</i>Домашняя</a>
+            <a class="waves-effect waves-light btn brown"><i class="material-icons left ">blur_circular</i>Товары</a>
+            <a class="waves-effect waves-light btn brown "><i class="material-icons left ">whatshot</i>О нас</a>
+            <a class="waves-effect waves-light btn brown"><i class="material-icons left ">contact_mail</i>Контакты</a>
+            <a class="waves-effect waves-light btn brown"><i class="material-icons left ">assignment_ind</i>Социальные сети</a>
+            <a class="waves-effect waves-light btn brown"><i class="material-icons left ">shopping_cart</i>Корзина</a>
+            <a class="waves-effect waves-light btn brown"><i class="material-icons left ">exit_to_app</i>Выход</a>
         </div>
     </div>
 
-    <div class="row" >
-        <div class= "col s3 orange card product-card">
-            <span class="brand">Basket shop</span>
+    <div class="row">
+        <div class="col s3">
+            <div class="orange card">
+
+            </div>
         </div>
-        <div class= "col s3 orange card product-card">
-            <span class="brand">Basket shop</span>
+        <div class="col s3">
+            <div class="orange card">
+
+            </div>
         </div>
-        <div class= "col s3 orange card product-card">
-            <span class="brand">Basket shop</span>
+        <div class="col s3">
+            <div class="orange card">
+
+            </div>
         </div>
-        <div class= "col s3 orange card product-card">
-            <span class="brand">Basket shop</span>
+        <div class="col s3">
+            <div class="orange card">
+
+            </div>
         </div>
     </div>
-    <div style="position: absolute; top: 50px; left: -10px; right: -10px; bottom: -10px">
-        <div class="row bg blur">
 
+    <div class="images-container">
+        <div class="sub-container">
             <div class="slider" id="main-slider">
                 <div class="slider-wrapper">
                     <img src="https://b.fssta.com/uploads/2017/02/021517-fsf-cbk-florida-gators-egbunu-pi.vresize.1200.630.high.26.jpg" class="slide" />
@@ -69,9 +66,10 @@
                     <img src="http://rusoboz.ru/images/sport/img-3011-1508320380.jpg" class="slide" />
                 </div>
             </div>
-
         </div>
     </div>
+
     <script src="js/slider.js"></script>
+
 </body>
 </html>
