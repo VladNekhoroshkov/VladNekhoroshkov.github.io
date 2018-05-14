@@ -7,6 +7,7 @@
     <link href="http://oi45.tinypic.com/js0ewi.jpg" rel="icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/slider.css" rel="stylesheet">
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
@@ -16,13 +17,21 @@
 <div class="row">
     <div class="col s4 offset-s4">
         <div class="img-metro">
-            <img src="http://www.100book.ru/b1911818.jpg">
+            <div class="sub-container">
+                <div class="slider" id="main-slider">
+                    <div class="slider-wrapper">
+                        <img src="http://www.100book.ru/b1911818.jpg" class="slide" />
+                        <img src="http://www.booksiti.net.ru/books/47796025.jpg" class="slide" />
+                        <img src="https://files.books.ru/pic/4241001-4242000/4241413/1561387574c.jpg" class="slide" />
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
 <div class="row">
-    <div class="col s4 offset-s4 card" style="opacity: 0.07">
+    <div class="col s4 offset-s4 card card">
         <span class="text-metro ">
             2033 год. Весь мир лежит в руинах. Человечество почти полностью уничтожено.
             Москва превратилась в город-призрак, отравленный радиацией и населенный чудовищами.
@@ -38,6 +47,6 @@
             <source src="content/film.mp4" type="video/mp4">
         </video>
     </div>
-
+<script src="js/slider.js"></script>
 </body>
 </html>

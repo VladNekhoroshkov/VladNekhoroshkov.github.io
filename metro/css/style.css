@@ -21,6 +21,10 @@
     opacity: 1;
 }
 
+.card{
+    background-color: rgba(255,255,255,0.09);
+}
+
 .background{
     position: fixed;
     top: 50%;
