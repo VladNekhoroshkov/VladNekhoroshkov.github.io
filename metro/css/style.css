@@ -1,7 +1,24 @@
 .background-container{
     position: absolute;
-    width: 100vw;
     height: 100vh;
+}
+
+.img-metro{
+    hight: 100%;
+    width: 100%;
+    z-index: 1;
+    margin-top: 10px;
+}
+
+.img-metro img{
+    width: 100%;
+}
+
+.text-metro{
+    text-align: center;
+    font-size: 10pt;
+    color: black;
+    opacity: 1;
 }
 
 .background{
