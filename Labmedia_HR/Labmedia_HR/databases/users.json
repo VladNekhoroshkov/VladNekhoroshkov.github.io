@@ -1,0 +1,29 @@
+[
+  
+  {
+    "id": "0",
+    "f_name": "name",
+    "patronymice": "name",
+    "s_name": "name",
+    "phone": "88005553535",
+    "email": "admin@mail.ru",
+    "token": "DC2RNa5dTUCbKhIlh0bHKg",
+    "description": null,
+    "reff": null,
+    "role": "HR",
+    "password": "qwerty"
+  },
+  {
+    "id": "1",
+    "f_name": "Иван",
+    "patronymic": "Петрович",
+    "s_name": "Сидоров",
+    "phone": "88005553232",
+    "email": "Ivan@mail.ru",
+    "token": "fdQ2uyW3902di0mBJLS1NA",
+    "role": "base",
+    "reff": "",
+    "description": "",
+    "password": "12345"
+  }
+]
