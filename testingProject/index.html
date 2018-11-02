@@ -26,7 +26,7 @@
         if(!isset($_POST['fio']) and !isset($_POST['email'])){
         ?>
 
-        <form class="container"  method="post">
+        <form class="container" action="form.php" method="post">
           <div class="row title">
             <h1>Оставить заявку</h1>
           </div>
@@ -64,7 +64,7 @@
           </div>
         </form>
 
-        <?php
+<!--        <?php
         $name = $_POST['name'];
         $phone = $_POST['phone'];
         $email = $_POST['email'];
@@ -100,6 +100,7 @@
           echo "При отправке обращения возникли ошибки";
         }
         ?>
+        -->
       </div>
     </div>
   </div>
