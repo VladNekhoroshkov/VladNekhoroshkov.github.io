@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Тестовое задание</title>
+
+  <link href="http://www.free-boiler.net/img/installation.png" rel="icon">
+  <link rel="stylesheet" href="./vendor/css/owl.carousel.min.css" />
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="vendor/css/bootstrap-grid.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-5 form">
+
+        <?php
+        //проверяем, существуют ли переменные в массиве POST
+        if(!isset($_POST['fio']) and !isset($_POST['email'])){
+        ?>
+
+        <form class="container"  method="post">
+          <div class="row title">
+            <h1>Оставить заявку</h1>
+          </div>
+          <div class="row name input-field">
+            <input type="text" name="name" placeholder="Ваше имя*" required="required">
+          </div>
+          <div class="row phone input-field">
+            <input type="tel" name="phone" placeholder="Ваш телефон*" required="required">
+          </div>
+          <div class="row email input-field">
+            <input type="email" name="email" placeholder="Ваш email*" pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$" required="required">
+          </div>
+          <div class="row question input-field">
+            <input type="text" name="question"placeholder="Ваш вопрос*" required="required">
+          </div>
+          <div class="row privacy">
+            <span>*-поля, обязательные для заполнения</span>
+            <span>
+              Нажав кнопку "Отправить", я даю согласие
+              на обработку моих персональных данных и
+              получение рекламы. С условиями обработки
+              персональных данных и получения рекламы,
+              изложенными на сайте rolf-center.ru <a href="https://google.com"> (Согласие
+              на обработку персональных данных и получение
+              рекламы)</a> -ознакомлен и согласен.
+            </span>
+          </div>
+          <div class="row">
+            <button class="send-button" type="submit" name="send-button">
+              Отправить
+              <i class="material-icons">
+                keyboard_arrow_right
+              </i>
+            </button>
+          </div>
+        </form>
+
+        <?php
+        $name = $_POST['name'];
+        $phone = $_POST['phone'];
+        $email = $_POST['email'];
+        $question = $_POST['question'];
+
+        $name = htmlspecialchars($name);
+        $phone = htmlspecialchars($phone);
+        $email = htmlspecialchars($email);
+        $question = htmlspecialchars($question);
+
+        $name = urldecode($name);
+        $phone = urldecode($phone);
+        $email = urldecode($email);
+        $question = urldecode($question);
+
+        $name = trim($name);
+        $phone = trim($phone);
+        $email = trim($email);
+        $question = trim($question);
+
+        if (isset($_POST['send-button'])))
+          {
+            mail("ars_pro@bk.ru", "Заявка с сайта", "Имя:".$name", Телефон: ".$phone", E-mail: ".$email ,"Ссылка на сайт: https://vk.com \r\n")
+          }
+
+        if (mail("ars_pro@bk.ru", "Заявка с сайта", "Имя:".$name", Телефон: ".$phone", E-mail: ".$email ,"Ссылка на сайт: https://vk.com \r\n"))
+          {
+            echo "Ваше обращение успешно отправлено";
+          }
+
+        else
+        {
+          echo "При отправке обращения возникли ошибки";
+        }
+        ?>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="content">
+  <div class="container">
+    <div class="row">
+      <div class="Title col-sm-12">
+        <h1>Наши специалисты</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="owl-carousel owl-theme">
+        <div class="master">
+          <div class="head">
+            <img src="./assets/master.png">
+          </div>
+          <div class="info">
+            <h3>Сергей Тихомиров</h3>
+            <div class="title">
+              <span>
+                Продавец-консультант отдела продаж
+              </span>
+            </div>
+            <div class="subtitle">
+              <span>
+                Сертифицирован по программе менеджер продаж
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="master">
+          <div class="head">
+            <img src="./assets/master.png">
+          </div>
+          <div class="info">
+            <h3>Сергей Тихомиров</h3>
+            <div class="title">
+              <span>
+                Продавец-консультант отдела продаж
+              </span>
+            </div>
+            <div class="subtitle">
+              <span>
+                Сертифицирован по программе менеджер продаж
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="master">
+          <div class="head">
+            <img src="./assets/master.png">
+          </div>
+          <div class="info">
+            <h3>Сергей Тихомиров</h3>
+            <div class="title">
+              <span>
+                Продавец-консультант отдела продаж
+              </span>
+            </div>
+            <div class="subtitle">
+              <span>
+                Сертифицирован по программе менеджер продаж
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="master">
+          <div class="head">
+            <img src="./assets/master.png">
+          </div>
+          <div class="info">
+            <h3>Сергей Тихомиров</h3>
+            <div class="title">
+              <span>
+                Продавец-консультант отдела продаж
+              </span>
+            </div>
+            <div class="subtitle">
+              <span>
+                Сертифицирован по программе менеджер продаж
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="master">
+          <div class="head">
+            <img src="./assets/master.png">
+          </div>
+          <div class="info">
+            <h3>Сергей Тихомиров</h3>
+            <div class="title">
+              <span>
+                Продавец-консультант отдела продаж
+              </span>
+            </div>
+            <div class="subtitle">
+              <span>
+                Сертифицирован по программе менеджер продаж
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--
+<? php
+if (isset($_POST['action'])) {
+        $to = 'job@qwerty.bz';
+        $subject = 'Обращения с сайта';
+        $message = "Имя: '.$_POST['name'].' ";
+        $message = "Телефон: '.$_POST['phone'].' ";
+        $message = "Email: '.$_POST['phone'].' '";
+        $message = "Обращение: '.$_POST['phone'].' ";
+        $message = "Заказ принят Орловым В. Л.  ссылка на сайт:  ";
+
+$headers = "Content-type: text/html; charset=utf-8 \r\n"; //Кодировка письма
+$headers = "From: Отправитель <ars_pro@bk.ru>\r\n"; //Наименование и почта отправителя
+mail($to, $subject, $message, $headers); //Отправка письма с помощью функции mail
+}
+?> -->
+
+<script src="./vendor/js/jquery.min.js"></script>
+<script src="./vendor/js/owl.carousel.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.owl-carousel').owlCarousel();
+  });
+</script>
+
+</body>
+</html>
