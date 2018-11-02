@@ -6,7 +6,7 @@
 
   <title>Тестовое задание</title>
 
-  <link href="http://www.free-boiler.net/img/installation.png" rel="icon">
+  <link href = "assets/icon.png" rel="icon">
   <link rel="stylesheet" href="./vendor/css/owl.carousel.min.css" />
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -21,12 +21,9 @@
     <div class="row">
       <div class="col-sm-5 form">
 
-        <?php
-        //проверяем, существуют ли переменные в массиве POST
-        if(!isset($_POST['fio']) and !isset($_POST['email'])){
-        ?>
 
-        <form class="container" action="form.php" method="post">
+
+        <form id="contact-form" class="container" action="form2.php" method="POST" onsubmit="this.reset(); return false;">
           <div class="row title">
             <h1>Оставить заявку</h1>
           </div>
